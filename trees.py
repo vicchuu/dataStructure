@@ -51,8 +51,15 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.preprocessing import StandardScaler
 
+
+
+for a in range(100,0,-1):
+    if(a==90):
+        a=10
+    print(a)
 sc=StandardScaler()
 newXValue=sc.fit_transform(X)
+
 
 xtrain,xtest,ytrain,ytest=train_test_split(newXValue,Y,test_size=0.3,random_state=3)
 
